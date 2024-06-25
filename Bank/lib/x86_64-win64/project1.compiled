@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1449427374"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq &quot;-FiC:\Users\phbru\OneDrive\Desktop\Projekte\Weiteres\Schule\BIN - Lazarus Projekte\Bank\lib\x86_64-win64&quot; -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 &quot;-FuC:\Users\phbru\OneDrive\Desktop\Projekte\Weiteres\Schule\BIN - Lazarus Projekte\Bank\&quot; &quot;-FUC:\Users\phbru\OneDrive\Desktop\Projekte\Weiteres\Schule\BIN - Lazarus Projekte\Bank\lib\x86_64-win64\&quot; &quot;-FEC:\Users\phbru\OneDrive\Desktop\Projekte\Weiteres\Schule\BIN - Lazarus Projekte\Bank\&quot; &quot;-oC:\Users\phbru\OneDrive\Desktop\Projekte\Weiteres\Schule\BIN - Lazarus Projekte\Bank\project1.exe&quot; -dLCL -dLCLwin32 project1.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

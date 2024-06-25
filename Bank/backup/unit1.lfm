@@ -1,0 +1,561 @@
+object Form1: TForm1
+  Left = 314
+  Height = 1076
+  Top = 179
+  Width = 661
+  Caption = 'Bankautomat'
+  ClientHeight = 1076
+  ClientWidth = 661
+  LCLVersion = '3.0.0.3'
+  object get_money: TButton
+    Left = 24
+    Height = 55
+    Top = 64
+    Width = 128
+    Caption = 'Geld auszahlen'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = get_moneyClick
+  end
+  object desposit_money: TButton
+    Left = 24
+    Height = 55
+    Top = 144
+    Width = 128
+    Caption = 'Geld einzahlen'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 1
+    OnClick = desposit_moneyClick
+  end
+  object check_account: TButton
+    Left = 472
+    Height = 55
+    Top = 64
+    Width = 177
+    Caption = 'Kontostand überprüfen'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+    OnClick = check_accountClick
+  end
+  object check_history: TButton
+    Left = 472
+    Height = 55
+    Top = 144
+    Width = 177
+    Caption = 'Kontoauszug drucken'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    OnClick = check_historyClick
+  end
+  object transfer_money: TButton
+    Left = 24
+    Height = 55
+    Top = 224
+    Width = 128
+    Caption = 'Geld überweisen'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+    OnClick = transfer_moneyClick
+  end
+  object change_currency: TButton
+    Left = 472
+    Height = 55
+    Top = 224
+    Width = 177
+    Caption = 'Währung wechseln'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+    OnClick = change_currencyClick
+  end
+  object account_key: TEdit
+    Left = 200
+    Height = 33
+    Top = 755
+    Width = 211
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+    TextHint = 'Bitte hier Karte einlegen'
+  end
+  object seven: TButton
+    Left = 200
+    Height = 60
+    Top = 803
+    Width = 67
+    Caption = '7'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+  end
+  object four: TButton
+    Left = 200
+    Height = 60
+    Top = 867
+    Width = 67
+    Caption = '4'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+  end
+  object one: TButton
+    Left = 200
+    Height = 60
+    Top = 931
+    Width = 67
+    Caption = '1'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+  end
+  object two: TButton
+    Left = 272
+    Height = 60
+    Top = 931
+    Width = 67
+    Caption = '2'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
+  end
+  object five: TButton
+    Left = 272
+    Height = 60
+    Top = 867
+    Width = 67
+    Caption = '5'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 11
+  end
+  object eight: TButton
+    Left = 272
+    Height = 60
+    Top = 803
+    Width = 67
+    Caption = '8'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 12
+  end
+  object three: TButton
+    Left = 344
+    Height = 60
+    Top = 931
+    Width = 67
+    Caption = '3'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 13
+  end
+  object six: TButton
+    Left = 344
+    Height = 60
+    Top = 867
+    Width = 67
+    Caption = '6'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 14
+  end
+  object nine: TButton
+    Left = 344
+    Height = 60
+    Top = 803
+    Width = 67
+    Caption = '9'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 15
+  end
+  object zero: TButton
+    Left = 272
+    Height = 60
+    Top = 995
+    Width = 67
+    Caption = '0'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 16
+  end
+  object stop: TButton
+    Left = 424
+    Height = 60
+    Top = 803
+    Width = 112
+    Caption = 'X Abbruch'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 17
+    OnClick = stopClick
+  end
+  object del_last_pin_digit: TButton
+    Left = 424
+    Height = 60
+    Top = 867
+    Width = 112
+    Caption = '> Korrektur'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 18
+    OnClick = del_last_pin_digitClick
+  end
+  object confirm_pin: TButton
+    Left = 424
+    Height = 60
+    Top = 931
+    Width = 112
+    Caption = 'Bestätigen'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 19
+    OnClick = confirm_pinClick
+  end
+  object confirm: TButton
+    Left = 424
+    Height = 33
+    Top = 755
+    Width = 112
+    Caption = 'Bestätigen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 20
+    OnClick = confirmClick
+  end
+  object PIN: TPanel
+    Left = 200
+    Height = 34
+    Top = 712
+    Width = 213
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 21
+  end
+  object empty: TButton
+    Left = 472
+    Height = 55
+    Top = 304
+    Width = 177
+    Caption = 'Leeren'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 22
+    OnClick = emptyClick
+  end
+  object tenEur: TButton
+    Left = 32
+    Height = 48
+    Top = 512
+    Width = 104
+    Caption = '10 EUR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 23
+    Visible = False
+  end
+  object twentyEur: TButton
+    Left = 149
+    Height = 48
+    Top = 512
+    Width = 104
+    Caption = '20 EUR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 24
+    Visible = False
+  end
+  object FiftyEur: TButton
+    Left = 267
+    Height = 48
+    Top = 512
+    Width = 104
+    Caption = '50 EUR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 25
+    Visible = False
+  end
+  object HundredEur: TButton
+    Left = 384
+    Height = 48
+    Top = 512
+    Width = 104
+    Caption = '100 EUR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 26
+    Visible = False
+  end
+  object TwoHundredEur: TButton
+    Left = 504
+    Height = 48
+    Top = 512
+    Width = 104
+    Caption = '200 EUR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 27
+    Visible = False
+  end
+  object payout_Counter_pnl: TPanel
+    Left = 160
+    Height = 50
+    Top = 432
+    Width = 296
+    Caption = '0 EUR'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 28
+    Visible = False
+  end
+  object continue_payout: TButton
+    Left = 267
+    Height = 49
+    Top = 592
+    Width = 104
+    Caption = 'Ausgeben'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 29
+    Visible = False
+    OnClick = continue_payoutClick
+  end
+  object deposit_btn: TButton
+    Left = 267
+    Height = 49
+    Top = 592
+    Width = 104
+    Caption = 'Einzahlen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 30
+    Visible = False
+    OnClick = deposit_btnClick
+  end
+  object empty1: TButton
+    Left = 24
+    Height = 55
+    Top = 304
+    Width = 128
+    Enabled = False
+    TabOrder = 31
+  end
+  object iban: TEdit
+    Left = 192
+    Height = 33
+    Top = 448
+    Width = 248
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 32
+    TextHint = 'Bitte Konto-ID eingeben'
+    Visible = False
+  end
+  object transfer_money_inp: TEdit
+    Left = 192
+    Height = 33
+    Top = 504
+    Width = 248
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 33
+    TextHint = 'Bitte Geldbetrag eingeben'
+    Visible = False
+  end
+  object transfer_btn: TButton
+    Left = 256
+    Height = 41
+    Top = 552
+    Width = 120
+    Caption = 'Überweisen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 34
+    Visible = False
+    OnClick = transfer_btnClick
+  end
+  object back: TButton
+    Left = 264
+    Height = 41
+    Top = 368
+    Width = 96
+    Caption = 'zurück'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 35
+    Visible = False
+    OnClick = backClick
+  end
+  object change: TButton
+    Left = 267
+    Height = 49
+    Top = 592
+    Width = 104
+    Caption = 'Wechseln'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 36
+    Visible = False
+    OnClick = changeClick
+  end
+  object output: TListBox
+    Left = 160
+    Height = 295
+    Top = 64
+    Width = 300
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Segoe UI Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    ParentFont = False
+    TabOrder = 37
+  end
+  object TCP: TLTCPComponent
+    Port = 0
+    OnReceive = TCPReceive
+    OnError = TCPError
+    OnDisconnect = TCPDisconnect
+    OnConnect = TCPConnect
+    Timeout = 0
+    ReuseAddress = False
+    Left = 24
+    Top = 16
+  end
+end

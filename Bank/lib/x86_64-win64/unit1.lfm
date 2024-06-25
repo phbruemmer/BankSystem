@@ -1,0 +1,246 @@
+object Form1: TForm1
+  Left = 332
+  Height = 763
+  Top = 175
+  Width = 614
+  Caption = 'Bankautomat'
+  ClientHeight = 763
+  ClientWidth = 614
+  LCLVersion = '2.2.6.0'
+  object get_money: TButton
+    Left = 24
+    Height = 55
+    Top = 64
+    Width = 120
+    Caption = 'Geld auszahlen'
+    OnClick = get_moneyClick
+    TabOrder = 0
+  end
+  object desposit_money: TButton
+    Left = 24
+    Height = 55
+    Top = 144
+    Width = 120
+    Caption = 'Geld einzahlen'
+    TabOrder = 1
+  end
+  object change_money: TButton
+    Left = 24
+    Height = 55
+    Top = 224
+    Width = 120
+    Caption = 'Geld wechseln'
+    OnClick = get_moneyClick
+    TabOrder = 2
+  end
+  object check_account: TButton
+    Left = 440
+    Height = 55
+    Top = 64
+    Width = 152
+    Caption = 'Kontostand überprüfen'
+    TabOrder = 3
+  end
+  object check_history: TButton
+    Left = 440
+    Height = 55
+    Top = 144
+    Width = 152
+    Caption = 'Kontoauszug drucken'
+    TabOrder = 4
+  end
+  object transfer_money: TButton
+    Left = 24
+    Height = 55
+    Top = 304
+    Width = 120
+    Caption = 'Geld überweisen'
+    OnClick = get_moneyClick
+    TabOrder = 5
+  end
+  object change_currency: TButton
+    Left = 440
+    Height = 55
+    Top = 224
+    Width = 152
+    Caption = 'Währeung wechseln'
+    OnClick = get_moneyClick
+    TabOrder = 6
+  end
+  object language: TButton
+    Left = 24
+    Height = 55
+    Top = 688
+    Width = 120
+    Caption = 'Sprache'
+    OnClick = get_moneyClick
+    TabOrder = 7
+  end
+  object account_key: TEdit
+    Left = 288
+    Height = 33
+    Top = 443
+    Width = 211
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+    TextHint = 'Bitte hier Karte einlegen'
+  end
+  object seven: TButton
+    Left = 288
+    Height = 60
+    Top = 491
+    Width = 67
+    Caption = '7'
+    Enabled = False
+    TabOrder = 9
+  end
+  object four: TButton
+    Left = 288
+    Height = 60
+    Top = 555
+    Width = 67
+    Caption = '4'
+    Enabled = False
+    TabOrder = 10
+  end
+  object one: TButton
+    Left = 288
+    Height = 60
+    Top = 619
+    Width = 67
+    Caption = '1'
+    Enabled = False
+    TabOrder = 11
+  end
+  object two: TButton
+    Left = 360
+    Height = 60
+    Top = 619
+    Width = 67
+    Caption = '2'
+    Enabled = False
+    TabOrder = 12
+  end
+  object five: TButton
+    Left = 360
+    Height = 60
+    Top = 555
+    Width = 67
+    Caption = '5'
+    Enabled = False
+    TabOrder = 13
+  end
+  object eight: TButton
+    Left = 360
+    Height = 60
+    Top = 491
+    Width = 67
+    Caption = '8'
+    Enabled = False
+    TabOrder = 14
+  end
+  object three: TButton
+    Left = 432
+    Height = 60
+    Top = 619
+    Width = 67
+    Caption = '3'
+    Enabled = False
+    TabOrder = 15
+  end
+  object six: TButton
+    Left = 432
+    Height = 60
+    Top = 555
+    Width = 67
+    Caption = '6'
+    Enabled = False
+    TabOrder = 16
+  end
+  object nine: TButton
+    Left = 432
+    Height = 60
+    Top = 491
+    Width = 67
+    Caption = '9'
+    Enabled = False
+    TabOrder = 17
+  end
+  object zero: TButton
+    Left = 360
+    Height = 60
+    Top = 683
+    Width = 67
+    Caption = '0'
+    Enabled = False
+    TabOrder = 18
+  end
+  object stop: TButton
+    Left = 512
+    Height = 60
+    Top = 491
+    Width = 80
+    Caption = 'X Abbruch'
+    Enabled = False
+    TabOrder = 19
+  end
+  object del_last_pin_digit: TButton
+    Left = 512
+    Height = 60
+    Top = 555
+    Width = 80
+    Caption = '> Korrektur'
+    Enabled = False
+    TabOrder = 20
+  end
+  object confirm_pin: TButton
+    Left = 512
+    Height = 60
+    Top = 619
+    Width = 80
+    Caption = 'Bestätigen'
+    Enabled = False
+    TabOrder = 21
+  end
+  object confirm: TButton
+    Left = 512
+    Height = 33
+    Top = 443
+    Width = 80
+    Caption = 'Bestätigen'
+    OnClick = confirmClick
+    TabOrder = 22
+  end
+  object output: TMemo
+    Left = 160
+    Height = 295
+    Top = 64
+    Width = 264
+    TabOrder = 23
+  end
+  object PIN: TPanel
+    Left = 288
+    Height = 34
+    Top = 400
+    Width = 213
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 24
+  end
+  object empty: TButton
+    Left = 440
+    Height = 55
+    Top = 304
+    Width = 152
+    OnClick = get_moneyClick
+    TabOrder = 25
+  end
+end
